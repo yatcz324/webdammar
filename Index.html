@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body> 
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Dammar Cahya Griya</h1>
+            <p>Web Developer</p>
+        </header>
+
+        <!-- Gambar Profil -->
+        <img src="pt2.jpg" alt="Foto Profil" class="profile-img">
+
+        <!-- Deskripsi Diri -->
+        <section>
+            <h2>Dammar Cahya Griya</h2>
+            <p>Hi,nice to meet you</p>
+        </section>
+
+        <!-- Informasi Kontak -->
+        <section class="contact-info">
+            <div>
+                <h3><i class="fas fa-envelope"></i> Email</h3>
+                <p>mardammar03@gmail.com</p>
+            </div>
+            <div>
+                <h3><i class="fas fa-phone"></i> Telepon</h3>
+                <p>+62 815 4558 2213</p>
+            </div>
+            <div>
+                <h3><i class="fab fa-instagram"></i> Instagram</h3>
+                <p><a href="https://www.instagram.com/damar_marz/" target="_blank">@damar_marz</a></p>
+            </div>
+            <div>
+                <h3><i class="fab fa-facebook"></i> Facebook</h3>
+                <p><a href="https://www.facebook.com/share/1DdGdi9cqF/"target="_blank">Dammar</a></p>
+            </div>
+        </section>
+
+        <!-- Tombol -->
+        <section>
+            <a href="https://example.com" class="btn">Proyek Saya</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Dammar Cahya Griya. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <style>
+        /* Properti CSS untuk Body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Wrapper */
+        .container {
+            width: 80%; /* Lebar kontainer lebih kecil */
+            max-width: 700px; /* Menetapkan lebar maksimum kontainer */
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 20px; /* Mengurangi padding kontainer */
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(52, 152, 219, 0.9);  
+            color: #fff;
+            padding: 15px; /* Mengurangi padding header */
+            border-radius: 10px;
+            margin-bottom: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.4em; /* Mengecilkan ukuran font */
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+ 
+        header p {
+            font-size: 1.1em; /* Mengecilkan ukuran font */
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Gambar Profil */
+        .profile-img {
+            width: 140px; /* Menyesuaikan ukuran gambar */
+            height: 140px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #3498db;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Sub Judul */
+        h2 {
+            font-size: 1.6em; /* Mengecilkan ukuran font */
+            margin-top: 20px;
+            color: #34495e;
+            font-weight: 500;
+        }
+
+        /* Paragraf */
+        p {
+            font-size: 1.1em; /* Mengecilkan ukuran font */
+            line-height: 1.7;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Informasi Kontak */
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info div {
+            background-color: #ecf0f1;
+            padding: 15px; /* Mengurangi padding */
+            border-radius: 8px;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info div:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-info div h3 {
+            margin-top: 0;
+            color: #3498db;
+        }
+
+        .contact-info div p {
+            font-size: 1em;
+            color: #34495e;
+            margin-bottom: 0;
+        }
+
+        /* Tombol */
+        .btn {
+            padding: 10px 20px; /* Menyesuaikan ukuran tombol */
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em; /* Mengecilkan ukuran font tombol */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 25px;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            padding: 12px;
+            background-color: #5d7b99;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsivitas */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info div {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+
+            .btn {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .btn {
+                font-size: 1em;
+            }
+
+            footer p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</body>
+</html>
